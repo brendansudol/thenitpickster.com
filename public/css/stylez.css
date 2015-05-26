@@ -1,0 +1,99 @@
+body { padding-top: 20px; }
+
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 50px 0;
+  /*text-align: center;*/
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+.jumbotron h3 {
+  font-size: 32px;
+  line-height: 1;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+#tweets {
+  padding-top: 20px;
+}
+
+.tweet-stream {
+  margin: 0px auto;
+  width: 520px;
+}
+
+.icon-twitter {
+  font-size: 20px;
+}
+
+.footer-link {
+  font-size: 11px;
+}
+
+.masthead {
+  height: 80px;
+}
+
+.my-title {
+  vertical-align: top;
+  position: relative;
+  left: 2px;
+  top: -5px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.twitter-share-button {
+  position: relative;
+  top: 3px;
+}
+
+.ex1 {
+  margin: 0px auto 20px auto;
+  max-width: 75%;
+}
+
+.examples {
+  margin: 30px 0;
+}
+
+.suggestion-header {
+  margin-top: 15px;
+}
+
+.tighten-space {
+  margin: 0 0 1px;
+}
+
+.pagination {
+  margin: 0 0 5px;
+}

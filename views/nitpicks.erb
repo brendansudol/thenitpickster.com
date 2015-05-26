@@ -1,0 +1,22 @@
+<div class='row-fluid'>
+  <% if flash[:success] %> 
+  <div class="control-group">
+    <div class="controls">
+      <p class="alert alert-success"><button type="button" class="close" data-dismiss="alert">×</button><%= flash[:success] %>  
+    </div>
+  </div>          
+  <% end %>
+  <h4>Nitpicks <small>proper usage in parenthesis</small></h4>
+  <ul>
+  	<% @nitpicks.sort.each do | nit | %>
+    <li>
+      <%= "#{nit[0]} (#{nit[1]})" %>
+    </li>
+   <% end %>
+  </ul>
+  <h5 class='suggestion-header'>Missing one of your pet peeves? Let me know!</h5>
+  <form action="/nitpicks" method="post" autocomplete="on" class='form-inline'>
+    <input type="text" class="input-large" placeholder="spelling/grammer booboo..." name="suggestion">
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div>

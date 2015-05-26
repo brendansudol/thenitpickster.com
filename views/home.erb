@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  <p class="lead">Hi there! I alert twitter users when they make tiny spelling and grammar mistakes (e.g., 'loose' instead of 'lose', 'then' instead of 'than', and other small infractions; full list is <a href="/nitpicks">here</a>).</p>
+  <p class="lead">Most people are thankful and appreciative, while others, well, not so much. <a href="https://twitter.com/TheNitPickster/favorites">Check out their responses</a>.</p>
+  <blockquote>
+    <p>A modern-day <em>Elements of Style</em>. Strunk and White would be proud.</p>
+    <small>Nobody</small>
+  </blockquote>
+</div>
+<hr>
+<div class="examples">
+  <p class="lead tighten-space">For Example: </p>
+  <div id="myCarousel" class="carousel slide ex1">
+    <div class="pagination pagination-small pagination-right">
+      <ul>
+        <li><a href="#myCarousel" data-slide="prev">←</a></li>
+        <li><a href="#myCarousel" data-slide="next">→</a></li>
+      </ul>
+    </div>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="/css/images/nitpick_ex<%= @random_pic_num %>.png" alt="">
+      </div>
+      <% @pics_shuffled.each do | num | %>
+      <div class="item">
+        <img src="/css/images/nitpick_ex<%= num %>.png" alt="">
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

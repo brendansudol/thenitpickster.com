@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NitPickster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/stylez.css" rel="stylesheet">
+    <!-- js -->
+    <script src="/js/jquery-1.7.2.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container-narrow">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="https://twitter.com/TheNitPickster">Profile</a></li>
+          <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/thenitpickster" data-text="@TheNitPickster is protecting the English language, one tweet at a time." data-via="TheNitPickster" data-size="large" data-count="none">Tweet</a></li>
+        </ul>
+        <h3>
+          <a href="/"><img src="/css/images/owl.jpg" style="width: 78px; height: 90px;" alt="Mr. NitPickler"></a>
+          <a href="/" class="muted my-title">The NitPickster</a>
+        </h3>
+      </div>
+      <hr>
+      <%= yield %>
+      <hr>
+      <div class="footer">
+        <p>
+          &copy; The English Language (and <a href="http://brendansudol.com/">Brendan Sudol</a>)
+          <a href="https://github.com/brendansudol/thenitpickster.com" class="pull-right footer-link">Code on GitHub</a>
+        </p>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+    var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-37353161-2']);
+     _gaq.push(['_setDomainName', 'thenitpickster.com']);
+     _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+     $(function(){
+       var window_width = $(window).width();
+       if (window_width < 450) {$('.my-title').text('Nitpickster')}
+
+       $(window).resize(function() {
+         if ($(window).width() < 450) {$('.my-title').text('Nitpickster')}
+         else {$('.my-title').text('The Nitpickster')}
+       });
+     });
+
+    </script>
+  </body>
+</html>

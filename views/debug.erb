@@ -1,0 +1,22 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Wrong Phrase</th>
+      <th>Right Phrase</th>
+      <th>Resp.</th>
+    </tr>
+  </thead>
+  <tbody>
+		<% @db_tweets.each do | tweet | %>
+    <tr>
+      <td><%= tweet.id %></td>
+      <td><%= tweet.message %></td>
+			<td><%= tweet.wrong_usage %></td>
+      <td><%= tweet.proper_usage %></td>
+      <td><%= tweet.responded %></td>
+    </tr>
+   <% end %>
+  </tbody>
+</table>
